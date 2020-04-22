@@ -42,3 +42,12 @@
 @import "pulse";
 @import "datepicker";
 @import "timepicker";
+
+.container {
+    color: #eee;
+}
+
+#twitch-embed {
+    display: block;
+    height: 500px;
+}

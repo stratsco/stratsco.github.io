@@ -33,6 +33,19 @@
   <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&autoLogAppEvents=1&version=v3.3&appId=126493727772175"></script>
   {{ content }}
   <!-- Compiled and minified JavaScript -->
+  <!-- Load the Twitch embed script -->
+  <script src="https://embed.twitch.tv/embed/v1.js"></script>
+
+  <!-- Create a Twitch.Embed object that will render within the "twitch-embed" root element. -->
+  <script type="text/javascript">
+    new Twitch.Embed("twitch-embed", {
+      layout: "video",
+      theme: "dark",
+      width: '100%',
+      height: '100%',
+      channel: "stratsco"
+    });
+  </script>
   <script src="/master.js"></script>
 </body>
 </html>
