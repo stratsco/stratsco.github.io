@@ -43,6 +43,13 @@
 @import "datepicker";
 @import "timepicker";
 
+.bg-container {
+    background-position: top left;
+    background-repeat: no-repeat;
+    display: block;
+    height: 500px;
+}
+
 .container {
     color: #eee;
 }
