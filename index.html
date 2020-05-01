@@ -42,13 +42,21 @@ layout: index
   </div>
 </div>
 
-  <div id="slide-out" class="sidenav">
-    <iframe class="discord-embed" src="https://discordapp.com/widget?id=101033046475546624&theme=dark" allowtransparency="true" frameborder="0"></iframe>
-  </div>
-  <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+<div class="fixed-action-btn">
+  <a data-target="slide-out" class="btn-floating btn-large purple sidenav-trigger">
+    <i class="fab fa-discord"></i>
+  </a>
+</div>
 
-  <script>
-     $(document).ready(function(){
-    $('.sidenav').sidenav();
+<div id="slide-out" class="sidenav">
+  <iframe class="discord-embed" src="https://discordapp.com/widget?id=101033046475546624&theme=dark" allowtransparency="true" frameborder="0"></iframe>
+</div>
+
+<script>
+    $(document).ready(function(){
+  $('.sidenav').sidenav();
+});
+$(document).ready(function(){
+    $('.fixed-action-btn').floatingActionButton();
   });
-  </script>
+</script>
