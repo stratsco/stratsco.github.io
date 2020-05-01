@@ -11,6 +11,11 @@ layout: index
   </div>
 </div>
 
+<!-- Blizzard Background -->
+<div class="parallax-container">
+  <div class="parallax"><img src="/images/bgblizz-slim.jpg"></div>
+</div>
+
 <!-- Discord -->
 <div class="container">
   <div id="row-discord" class="row">
@@ -37,9 +42,13 @@ layout: index
   </div>
 </div>
 
-<!-- Other Games -->
-<div class="container">
-  <div id="row-other" class="row">
-    <div class="col s12"><span class="flow-text">other</span></div>
+  <div id="slide-out" class="sidenav">
+    <iframe class="discord-embed" src="https://discordapp.com/widget?id=101033046475546624&theme=dark" allowtransparency="true" frameborder="0"></iframe>
   </div>
-</div>
+  <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+
+  <script>
+     $(document).ready(function(){
+    $('.sidenav').sidenav();
+  });
+  </script>

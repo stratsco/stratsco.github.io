@@ -20,6 +20,7 @@
   <noscript><img height="1" width="1" style="display:none"
     src="https://www.facebook.com/tr?id=1896251207268347&ev=PageView&noscript=1"
   /></noscript>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <!-- End Facebook Pixel Code -->
   <!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
@@ -34,18 +35,13 @@
   {{ content }}
   <!-- Compiled and minified JavaScript -->
   <!-- Load the Twitch embed script -->
-  <script src="https://embed.twitch.tv/embed/v1.js"></script>
+  <script src="/master.js"></script>
 
   <!-- Create a Twitch.Embed object that will render within the "twitch-embed" root element. -->
   <script type="text/javascript">
-    new Twitch.Embed("twitch-embed", {
-      layout: "video",
-      theme: "dark",
-      width: '100%',
-      height: '100%',
-      channel: "stratsco"
+     $(document).ready(function(){
+      $('.parallax').parallax();
     });
   </script>
-  <script src="/master.js"></script>
 </body>
 </html>
