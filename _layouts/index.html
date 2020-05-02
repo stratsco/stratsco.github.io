@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-  <!-- Facebook Pixel Code -->
   <script>
     !function(f,b,e,v,n,t,s)
     {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -14,15 +13,7 @@
     fbq('init', '688264261262130');
     fbq('track', 'PageView');
   </script>
-  <noscript>
-    <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=688264261262130&ev=Redirect&noscript=1" />
-  </noscript>
-  <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=1896251207268347&ev=PageView&noscript=1"
-  /></noscript>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <!-- End Facebook Pixel Code -->
-  <!-- Compiled and minified CSS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
   <link rel="stylesheet" href="/master.css">
   <meta charset="utf-8">
@@ -30,14 +21,10 @@
   <title>{{ site.title }} - {{ site.description }}</title>
 </head>
 <body>
-  <div id="fb-root"></div>
-  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&autoLogAppEvents=1&version=v3.3&appId=126493727772175"></script>
+ 
   {{ content }}
-  <!-- Compiled and minified JavaScript -->
-  <!-- Load the Twitch embed script -->
-  <script src="/master.js"></script>
 
-  <!-- Create a Twitch.Embed object that will render within the "twitch-embed" root element. -->
+  <script src="/master.js"></script>
   <script type="text/javascript">
      $(document).ready(function(){
       $('.parallax').parallax();

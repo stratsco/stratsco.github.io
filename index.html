@@ -21,7 +21,13 @@ layout: index
   <div id="row-discord" class="row">
     <div class="col m6 s12">
       <p>We started in 2014 and we've been hanging around together ever since. Over the years our mission has evolved from the early guild days but we've always remained a haven for adults who love gaming in an environment that doesn't involve your mom being called names.</p>
-      <p><a href="/discord" class="waves-effect waves-light btn-large"><i class="fab fa-discord left"></i>discord</a> <!-- <a href="/forum" class="waves-effect waves-light btn-large"><i class="fab fa-discourse left"></i>Forum</a> --></p>
+      <p>
+        <button href="/discord" class="waves-effect waves-light btn-large pulse"><i class="fab fa-discord left"></i>Open Discord</button>
+      </p>
+      <p class="input-field inline">
+        <input type="text" value="https://discord.gg/mAGYRXt" id="myInput" class="inline white-text">
+        <button class="waves-effect waves-light btn-small grey btn-copy inline" onclick="myFunction()" onmouseout="outFunc()"><i class="fa fa-clipboard left"></i>Copy Discord Link</button>
+      </p>
     </div>
   </div>
 </div>
@@ -32,31 +38,29 @@ layout: index
     <!-- BattleNet Group -->
     <div class="col l3 m6 s12">
       <p>The <b>StratsCo Blizzard Group</b> allows for quick invites to all BattleNet-powered games. Late-night HOTS anyone?</p>
-      <p><a href="/bnet" class="waves-effect waves-light btn-small"><i class="fab fa-battle-net left"></i>BattleNet</a></p>
+      <p><button href="/bnet" class="waves-effect waves-light btn-small"><i class="fab fa-battle-net left"></i>BattleNet</button></p>
     </div>
     <!-- WoW Community -->
     <div class="col l3 m6 s12">
-      <p>Our <b>StratsCo Warcraft Community</b> is a cross-realm group of adventurers who want to escape the <i>hurrrrr</i>.</p>
-      <p><a href="/wow" class="waves-effect waves-light btn-small"><i class="fa fa-map left"></i>Warcraft</a></p>
+      <p>Our <b>StratsCo Warcraft Community</b> is a cross-realm group of adventurers who battle together regularly.</p>
+      <p><button href="/wow" class="waves-effect waves-light btn-small"><i class="fa fa-map left"></i>Warcraft</button></p>
     </div>
   </div>
 </div>
 
-<!-- <div class="fixed-action-btn">
-  <a data-target="slide-out" class="btn-floating btn-large purple sidenav-trigger">
-    <i class="fab fa-discord"></i>
-  </a>
-</div> -->
-
-<div id="slide-out" class="sidenav">
-  <iframe class="discord-embed" src="https://discordapp.com/widget?id=101033046475546624&theme=dark" allowtransparency="true" frameborder="0"></iframe>
-</div>
-
 <script>
-    $(document).ready(function(){
-  $('.sidenav').sidenav();
-});
-$(document).ready(function(){
-    $('.fixed-action-btn').floatingActionButton();
-  });
+  function myFunction() {
+  var copyText = document.getElementById("myInput");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999);
+  document.execCommand("copy");
+  
+  var tooltip = document.getElementById("myTooltip");
+  tooltip.innerHTML = "Copied: " + copyText.value;
+}
+
+function outFunc() {
+  var tooltip = document.getElementById("myTooltip");
+  tooltip.innerHTML = "Copy to clipboard";
+}
 </script>
