@@ -12,6 +12,7 @@
     'https://connect.facebook.net/en_US/fbevents.js');
     fbq('init', '688264261262130');
     fbq('track', 'Redirect');
+    fbq('track', 'PageView');
 
     var url = "{{ page.redirect.to }}";
     if(typeof IE_fix != "undefined") // IE8 and lower fix to pass the http referer
